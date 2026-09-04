@@ -26,12 +26,12 @@ This project was completed during a **Practical Work (Kerja Praktik)** placement
 
 **Choosing the optimal number of clusters.** Both the Elbow Method and the Silhouette Score point to k = 3: WCSS stops dropping sharply past k = 3, and the Silhouette Score peaks at k = 3 (≈0.65) before declining for larger k.
 
-<p align="center"> <img src="results/elbow_kmeans.png" width="30%"> <img src="results/silhouette_kmeans.png" width="30%"> </p>
+<p align="center"> <img src="results/elbow_kmeans.png" width="10%"> <img src="results/silhouette_kmeans.png" width="40%"> </p>
 <p align="center"> <em>Elbow Method (left) and Silhouette Score (right) across k = 2–8, both indicating k = 3 as optimal.</em> </p>
 
 **Cluster separation.** Reducing the standardized features to 2 and 3 principal components with PCA confirms that the three clusters are well separated, with Cluster 1 (medium potential) as the dense core, Cluster 0 (low potential, high-frequency small outlets) spread along one axis, and Cluster 2 (high potential) forming a distinct, more dispersed group.
 
-<p align="center"> <img src="results/pca2d_kmeans.png" width="48%"> <img src="results/pca3d_kmeans.png" width="30%"> </p>
+<p align="center"> <img src="results/pca2d_kmeans.png" width="40%"> <img src="results/pca3d_kmeans.png" width="30%"> </p>
 <p align="center"> <em>PCA 2D (left) and PCA 3D (right) projections of the 3 clusters.</em> </p>
 
 ## Repository Contents
